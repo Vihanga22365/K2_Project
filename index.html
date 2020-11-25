@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Project</title>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+
+#main .sub-main {
+  background: url("images/bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+#main .subscribe {
+  font-size: 15px;
+  text-align: center;
+  margin-top: auto;
+
+}
+
+#main .subscribe h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#main .subscribe .subscribe-form {
+  min-width: 300px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  text-align: left;
+}
+
+#main .subscribe .subscribe-form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#main .tick {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #16a085;
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#main .subscribe .subscribe-form input[type="submit"]:hover {
+  background: #16a085;
+}
+
+#main .subscribe .error-message {
+  display: none;
+  color: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#main .subscribe .sent-message {
+  display: none;
+  color: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#main .subscribe .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+
+#main .subscribe .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading-notify 1s linear infinite;
+  animation: animate-loading-notify 1s linear infinite;
+}
+
+::placeholder {
+  color: black;
+  font-family: Verdana;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a style="margin: 20px;" href="index.html">Home</a></li>
+          <li><a style="margin: 20px;" href="">Photoapp</a></li>
+          <li><a  href=""><img style="width: 100px; height: 48px;" src="images/iconmain.png"></a></li>
+          <li><a style="margin: 20px;" href="">Design</a></li>
+          <li><a style="margin: 20px;" href="">Download</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a  class="scrollto"></a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
+      <h1  style="margin-top: auto;">your life , a photo</h1>
+      <h2>print your life in a simple photo</h2>
+      <div class="d-flex" >
+        <a href="" class="btn-get-started scrollto">Get Started</a>
+      </div>
+        <div style="margin-top: auto; margin-bottom: 3%;">
+          <a style="color: white; font-size: 24px; padding: 5px;" href="#" class="fa fa-twitter"></a>
+          <a style="color: white; font-size: 24px; padding: 5px;" href="#" class="fa fa-flickr"></a>
+          <a style="color: white; font-size: 24px; padding: 5px;" href="#" class="fa fa-dribbble"></a>
+        </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main" style="padding: 0px;">
+
+
+    <div class="sub-main">
+      <div class="container d-flex flex-column align-items-center">
+
+        <div class="subscribe" style="margin-top: 30%;">
+          <h4 style="text-transform: uppercase;">subscribe to us community</h4>
+          <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+            <div class="subscribe-form">
+              <input type="email" name="email" placeholder="YOUR EMAIL"><a class="tick" href=""><i style="margin-top: 80%;" class="fa fa-check"></i></a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
